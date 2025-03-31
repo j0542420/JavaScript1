@@ -51,6 +51,26 @@ let username = document.getElementById("username");
 username.onchange = function(){
     container.innerHTML += username.value;
 }
+
+window.onload = function(){
+    container.innerText = username.value;
+}
+function createTable(){
+    htmlText=""; //declare htmlText to hold html text
+    htmlText += "<table>"; //htmlText = htmlText +"<Table"
+
+    htmlText += "<tr>";
+    for(let i=0;i<6;i++){
+        htmlText += "<th>"+ ("data"+i) + "</th>";
+    }
+    htmlText += "</th>";
+    htmlText += "<tr>";
+    for(let i=0;i<10;i++){
+        htmlText += "<tr>"+ ("data"+i) + "</tr>";
+    }
+    htmlText += "</tr>";
+}
+
 // 4 ways to associate a handler to an events
 
 // 1. inline associate
@@ -91,7 +111,14 @@ let specialString = "I'm fine";
 btnClickMe.onclick = handleClick2;
 function handleClick()
 {
-    window.alert(x);
+    //window.alert(x);
+
+    let image1 = document.getElementById("img")[0];
+    image1.style.width = "200px";
+    image1.style.height = "400px";
+
+    footer.className="heading1";
+    header.className="heading2";
 }
 
 function handleClick2()

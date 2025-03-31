@@ -1,3 +1,48 @@
 /* h1: hover{
     color:red;
 } */
+ /* use the class name */
+ .heading1{
+    color:yellow;
+ }
+ .heading2{
+    font-size: 100px;
+ }
+ /* using the tag name */
+ button{
+    color:red;
+ }
+ /* using the id selection */
+
+ button:hover{
+    color:green;
+ }
+ #btnClickeMe{
+    width: 200px;
+    height: 100px;
+ }
+
+ a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  table{
+    border:black solid 2px;
+  }
+
+  td:nth-child(even), th:nth-child(even) {
+    background-color: #D6EEEE;
+  }
